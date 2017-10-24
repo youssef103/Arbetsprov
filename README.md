@@ -10,6 +10,7 @@ Instructions
 * Nothing needs to be saved if the page is reloaded (i.e don’t have to use cookies/database etc)
 * Logo and search-icon is provided under /assets
 * We expect a total of 3 files - .html, .js and .css
+* Solutions built using frameworks such as flex-grid, bootstrap or similar will be discarded.
  
 What we look at
 * HTML5 semantics, complexity of css3 solutions and js sanity.
