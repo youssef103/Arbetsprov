@@ -8,13 +8,13 @@ Instructions
 * When hitting [ENTER] the selected search value should be saved with date/timestamp beneath the search box (as a search history)
 * The page should be responsive, so that if width of window is changed it should adapt
 * Nothing needs to be saved if the page is reloaded (i.e don’t have to use cookies/database etc)
+* Logo and search-icon is provided under /assets
+* We expect a total of 3 files - .html, .js and .css
  
 What we look at
-* How’s HTML/CSS/JS written?
-* How is it packaged?
+* HTML5 semantics, complexity of css3 solutions and js sanity.
 * General sanity check on structure and solution
-* Is there a readme file giving enough instructions to start your solution?
  
-Solve the task as far as you think is necessary. For this specific assignment focus on HTML/CSS, structure and good coding standards rather than advanced JS.
+Solve the task as far as you think is necessary.
  
 When done push your branch and let us know it’s done, e.g. by a pull request.
