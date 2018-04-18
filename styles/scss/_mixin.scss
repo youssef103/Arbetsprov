@@ -5,66 +5,32 @@
 /// @param {Keyword | Angle} $direction - Linear gradient direction
 /// @param {Arglist} $color-stops - List of color-stops composing the gradient
 @mixin linear-gradient($direction, $color-stops...) {
-    background: nth(nth($color-stops, 1), 1);
-    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
-    background: linear-gradient($direction, $color-stops);
-  }
-
-  @mixin border-radius($radius) {
-	border-radius: $radius;
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
 }
 
-@mixin keyframes($animationName) {
-    @-webkit-keyframes #{$animationName} {
-      @content;
-    }
-    @-moz-keyframes #{$animationName} {
-      @content;
-    }
-    @-o-keyframes #{$animationName} {
-      @content;
-    }
-    @keyframes #{$animationName} {
-      @content;
-    }
-  }
-  @mixin animate($name, $duration, $iteration, $direction) {
-    -webkit-animation-duration: $duration;
-       -moz-animation-duration: $duration;
-         -o-animation-duration: $duration;
-            animation-duration: $duration;
-    -webkit-animation-iteration-count: $iteration;
-       -moz-animation-iteration-count: $iteration;
-         -o-animation-iteration-count: $iteration;
-            animation-iteration-count: $iteration;
-    -webkit-animation-name: $name;
-       -moz-animation-name: $name;
-         -o-animation-name: $name;
-            animation-name: $name;
-    -webkit-animation-direction: $direction;
-       -moz-animation-direction: $direction;
-         -o-animation-direction: $direction;
-            animation-direction: $direction;
-  }
-
-  
-  @mixin delete {
-    @include animate(delete, 2s, forward, normal);
-  }
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
 
 @mixin placeholder-color($color) {
-    &::-webkit-input-placeholder { /* WebKit browsers */
-        color: $color;
-    }
-    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-        color: $color;
-    }
-    &::-moz-placeholder { /* Mozilla Firefox 19+ */
-        color: $color;
-    }
-    &:-ms-input-placeholder { /* Internet Explorer 10+ */
-        color: $color;
-    }
+  &::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: $color;
   }
+  &:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: $color;
+  }
+  &::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: $color;
+  }
+}
