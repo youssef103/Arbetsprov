@@ -1,0 +1,41 @@
+.logs {
+    &__items {
+        //width: $xl-port-size * 1vw;
+        display: none;
+        background: rgba($color: #ffffff, $alpha: .2);
+        padding: $m-size 0;
+    }
+    &__item {
+        color: $white;
+        cursor: pointer;
+        p {
+            padding-left: $xl-size;
+        }
+        time{
+            line-height: 3;
+        }
+        .del {
+            display: none;
+            background: rgba($color: #7A3C53, $alpha: .2);
+            text-align: center;
+            line-height: 3;
+            i{
+                background: $white;
+                border-radius: 50%;
+                padding: $m-size/3 $m-size/2;
+                color: $l-input-color;
+                font-style: normal;
+            }
+            
+            &:hover {
+                background: #7A3C53;
+            }
+        }
+        &:hover {
+            background: rgba($color: #ffffff, $alpha: .2);
+            .del {
+                display: block;
+            }
+        }
+    }
+}

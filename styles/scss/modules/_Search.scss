@@ -1,0 +1,18 @@
+.search {
+    &__icon{
+        position: absolute;
+        left: $l-size;
+        top: $m-size;
+    }
+    &__input {
+        @include border-radius(5px);
+        @include placeholder-color( $l-input-color);
+        outline: none;
+        border: $d-input-color;
+        background: $d-input-color;
+        color: $l-input-color;
+        width: $xl-port-size * 1vw;
+        padding: $m-size;
+        padding-left: $xl-size;
+    }
+}

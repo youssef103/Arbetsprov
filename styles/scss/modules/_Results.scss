@@ -1,0 +1,24 @@
+.results {
+   
+
+    &__items{
+        display: none;
+        z-index: 2;
+        color: $white;
+        position: absolute;
+        @include border-radius(5px);
+        border: $d-input-color;
+        background: $d-input-color;
+        color: $l-input-color;
+        width: $xl-port-size * 1vw;
+        margin-top: $s-size/3;
+        padding: $m-size;
+    }
+    &__item{
+        padding: $s-size/2;
+        cursor: pointer;
+        &:hover{
+            background: rgba($color: #000000, $alpha: .3)
+        }
+    }
+}

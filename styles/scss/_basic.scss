@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    body {
+        font-family: $font-family;
+        font-size: $m-size;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+
